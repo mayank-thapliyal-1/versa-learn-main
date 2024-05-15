@@ -1,0 +1,263 @@
+* {
+  margin: 0px;
+  padding: 0%;
+}
+.line{
+  border: solid 1px #004d7a ;
+}
+/* .main {
+  background-image: url(verca.png);
+  height: 100vh;
+  fill-opacity: inherit;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 0%;
+} */
+.logo {
+  height: 5rem;
+  width: 5rem;
+}
+.navbar {
+  z-index: 10;
+  /* position: fixed; */
+  width: 83.7rem;
+  display: flex;
+  margin: 0%;
+  padding: 10px 50px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffede7;
+}
+.nav-items {
+  display: flex;
+  gap: 120px;
+  font-size: larger;
+  position: relative;
+  margin-left: 40px;
+  font-weight: 700;
+}
+.nav-items a {
+  position: relative;
+  margin-left: 40px;
+  font-weight: 700;
+  color: #00636a;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.nav-items a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: #00636a;
+  border-radius: 5px;
+  height: 2px;
+  width: 100%;
+  bottom: -6px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+/* .nav-items a:hover{
+font-size: larger;
+color: #008793;
+} */
+.nav-items a:hover:after {
+  transform: scaleX(1);
+}
+.sign-up {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 10px;
+  size: 100px;
+  font-size: medium;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: #004d7a;
+  color: white;
+  border: none;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #0b76b4;
+}
+html::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0.1rem;
+  overflow-x: scroll;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #008793;
+  border-radius: 3rem;
+}
+.hero {
+  width: 82rem;
+  /* position: absolute; */
+  /* top: 6.5rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 5rem 4rem;
+  padding-top: 5rem;
+}
+.hero-button-holder {
+  display: flex;
+  gap: 18px;
+  width: fit-content;
+}
+.hero-button {
+  border: solid 2px #004d7a;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: 500;
+  font-size: large;
+  color: #004d7a;
+  cursor: pointer;
+}
+.hero-button:hover {
+  background-color: #004d7a;
+  color: white;
+}
+.container {
+  background-color: rgb(216, 212, 212);
+  border: solid 2px rgb(117, 114, 114);
+  border-radius: 5px;
+  width: 70rem;
+}
+.translation {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+  align-items: center;
+  padding: 15px;
+}
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70rem;
+  height: 25rem;
+}
+.input {
+  padding-top: 15px;
+  padding-left: 20px;
+  width: 35rem;
+  font-size: larger;
+  text-align: start;
+}
+.input-container div {
+  background-color: white;
+  width: 35rem;
+  border: solid 1px rgb(117, 114, 114);
+}
+.about-us {
+  padding: 50px;
+  color: #004d7a;
+  width: 90rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.about-us h1 {
+  border-bottom: solid 2px #004d7a;
+  font-size: 5rem;
+}
+.about-container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  width: 70rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+}
+.about-content {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
+}
+.about-container img {
+  height: 24rem;
+  width: 20rem;
+}
+.help {
+  font-size: 2rem;
+  text-align: center;
+  color: #004d7a;
+  display: flex;
+  flex-direction: column;
+ padding: 50px;
+  gap: 50px;
+}
+.help h1 {
+  font-size: 3rem;
+}
+.help form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.help textarea {
+  height: 20rem;
+  width: 40rem;
+  border: solid 2px rgb(117, 114, 114);
+  padding: 15px;
+
+  border-radius: 10px;
+}
+
+.contact {
+  padding: 30px;
+  justify-content: center;
+  color: #004d7a;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.contact h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+.contact-form {
+  padding-left: 30rem;
+
+  display: grid;
+  grid-column: 2;
+  gap: 4px;
+  width: 20rem;
+  padding-top: 2px;
+}
+.form-item {
+  justify-content: center;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 2rem;
+}
+.form-item label {
+  font-size: 1.5rem;
+}
+.form-item input {
+  border: solid 2px rgb(117, 114, 114);
+  padding: 15px;
+
+  border-radius: 10px;
+}
+.form-item textarea {
+  border: solid 2px rgb(117, 114, 114);
+  padding: 5px;
+  border-radius: 10px;
+  height: 15rem;
+}
